@@ -28,7 +28,7 @@ st.sidebar.header("Enter Patient Detail")
 
 #variable making
 cp_label = st.sidebar.selectbox("Chest Pain type",list(cp_options.keys()))
-cp = cp_options(cp_label)
+cp = cp_options[cp_label]
 
 st.write("Your Chestpain is: ", cp)
 
@@ -42,7 +42,7 @@ st.write("Your Entered ST Depression: ", oldpeak)
 
 
 thal_label = st.sidebar.selectbox("Thallium Test Result", list(thal_options.keys()))
-thal = thal_options(thal_label)
+thal = thal_options[thal_label]
 st.write("Your Thallium: ", thal)
 
 
