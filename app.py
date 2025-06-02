@@ -28,7 +28,7 @@ st.sidebar.header("Enter Patient Detail")
 
 
 #variable making
-cp_label = st.sidebar.selectbox("Chest Pain type",list(cp_options.keys()))
+cp_label = st.sidebar.selectbox("Choose Chest Pain type",list(cp_options.keys()))
 cp = cp_options[cp_label]
 st.write("Your Chestpain is ", cp)
 
@@ -44,7 +44,7 @@ st.write("Your Entered ST Depression ", oldpeak)
 
 
 #Thallium
-thal_label = st.sidebar.selectbox("Thallium Test Result", list(thal_options.keys()))
+thal_label = st.sidebar.selectbox("Choose Thallium Test Result", list(thal_options.keys()))
 thal = thal_options[thal_label]
 st.write("Your Thallium ", thal)
 
@@ -65,7 +65,7 @@ st.write("Your Age is ", age)
 
 
 #Exercise angina
-exna = st.sidebar.selectbox("Enter the Exercise angina",[0,1])
+exna = st.sidebar.selectbox("Choose the Exercise angina",[0,1])
 st.write("Your Exercise angina is ", exna)
 
 
@@ -78,7 +78,7 @@ gen = st.sidebar.selectbox("Choose your Gender/Sex",[0,1])
 '''________________________________________________________________________________________________________________________'''
 
 if st.sidebar.button('Predict'):
-    features = np.array([[cp, max_hr, oldpeak, thal, chol, bp]], dtype=float)
+    features = np.array([[cp, max_hr, oldpeak, thal, chol, bp, age, exna, vesflu, gen]], dtype=float)
     
     
     try:
