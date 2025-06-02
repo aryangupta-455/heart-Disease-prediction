@@ -73,6 +73,7 @@ st.write("Your Exercise angina is ", exna)
 vesflu = st.sidebar.selectbox("Choose Number of vessels fluro",[0,1,2,3])
 st.write("Your Number of vessels fluro is ", vesflu)
 
+gen = st.sidebar.selectbox("Choose your Gender/Sex",[0,1])
 
 '''________________________________________________________________________________________________________________________'''
 
