@@ -50,17 +50,17 @@ st.write("Your Thallium ", thal)
 
 
 #Cholesterol
-chol = st.number_input("Enter the Cholesterol ",min_value=0,max_value=600,step=1)
+chol = st.sidebar.slider("Enter the Cholesterol ",min_value=0,max_value=600,value=1)
 st.write("Your Cholesterol ", chol)
 
 
 #Blood Pressure
-bp = st.number_input("Enter Blood pressure ",min_value=0, max_value=201, step=1 )
+bp = st.sidebar.slider("Enter Blood pressure ",min_value=0, max_value=201, value=1 )
 st.write("Your Blood Pressure is ", bp)
 
 
 #Age
-age = st.number_input("Enter the Age ",min_value=25,max_value=80,step =1)
+age = st.sidebar.slider("Enter the Age ",min_value=25,max_value=80,value=1)
 st.write("Your Age is ", age)
 
 
