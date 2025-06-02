@@ -37,7 +37,7 @@ max_hr = st.sidebar.slider("Max Heart Rate",70,150,210)
 st.write("Your Max Heart Rate is: ", max_hr)
 
 
-oldpeak = st.sidebar.slider("ST Depression",[0.0,6.0,1.0])
+oldpeak = st.sidebar.slider("ST Depression (Oldpeak)", min_value=0.0, max_value=6.0, value=1.0)
 st.write("Your Entered ST Depression: ", oldpeak)
 
 
